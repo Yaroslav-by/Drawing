@@ -14,6 +14,16 @@ public class MyPanel extends JPanel {
 		
 		Graphics2D g2D = (Graphics2D) g;
 		
+		//Bottom part
+		g2D.setColor(Color.white);
+		g2D.fillOval(200, 350, 200, 200);
+		g2D.setColor(Color.black);
+		g2D.setStroke(new BasicStroke(4));
+		g2D.drawOval(200, 350, 200, 200);
+		
+		
+		
+		
 		
 	}
 	
