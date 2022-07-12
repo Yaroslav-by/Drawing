@@ -25,16 +25,31 @@ public class MyPanel extends JPanel {
 		g2D.setStroke(new BasicStroke(4));
 		g2D.drawOval(200, 350, 200, 200);
 		
-		//Middle part
+		//Left hand
 		g2D.setColor(Color.white);
-		
+		g2D.fillPolygon(new int[] {365, 415, 422, 427, 420, 442, 444, 422, 443, 440, 418, 369}, 
+				  		  new int[] {273, 254, 230, 230, 254, 243, 248, 259, 272, 276, 263, 282}, 
+					12);
 		g2D.setColor(Color.black);
-		//g2D.drawPolygon(new int[] {}, new int[] {}, 1);
+		g2D.drawPolygon(new int[] {365, 415, 422, 427, 420, 442, 444, 422, 443, 440, 418, 369}, 
+						  new int[] {273, 254, 230, 230, 254, 243, 248, 259, 272, 276, 263, 282}, 
+										12);
 		
+		//Middle part
 		g2D.setColor(Color.white);
 		g2D.fillOval(225, 235, 150, 150);
 		g2D.setColor(Color.black);
 		g2D.drawOval(225, 235, 150, 150);
+		
+		//Right hand
+		g2D.setColor(Color.white);
+		g2D.fillPolygon(new int[] {251, 186, 179, 174, 181, 159, 157, 179, 158, 161, 182, 248}, 
+				  new int[] {279, 254, 230, 230, 254, 243, 248, 259, 272, 276, 263, 288}, 
+								12);
+		g2D.setColor(Color.black);
+		g2D.drawPolygon(new int[] {251, 186, 179, 174, 181, 159, 157, 179, 158, 161, 182, 248}, 
+						  new int[] {279, 254, 230, 230, 254, 243, 248, 259, 272, 276, 263, 288}, 
+										12);
 		
 		//Top part
 		g2D.setColor(Color.white);
